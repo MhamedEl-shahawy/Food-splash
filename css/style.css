@@ -1,0 +1,124 @@
+:root{
+    --main-color:#444A54;
+    --second-color:#fd8f48;
+}
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    height:100%;
+    width:100%;
+    overflow-x:hidden;
+}
+.header{
+    width:100%;
+    margin-bottom: 50px;
+  
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:80%;
+    margin: auto;
+   
+}
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    width:30%;
+    padding-left: 3em;
+}
+.header__link-logo{
+     text-decoration: none;
+     color: var(--main-color);
+     padding: 0.5em;
+     display: flex;
+     align-items: center;
+}
+.header__logo{
+    height: 35px;
+    margin-right: 5px;
+}
+.header__logo-text{
+    font-size:24px;
+    font-weight: 400;
+}
+ul{
+     width:50%;
+     padding: 0.5em;
+     display: flex;
+
+}
+nav ul li{
+    margin: 10px 15px;
+    
+    list-style: none;
+}
+nav li a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Catamaran, sans-serif;
+    font-weight: 700;
+}
+/*start hero*/
+.hero{
+     width: 100%;
+}
+.hero__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:80%;
+    margin: auto;
+    padding: 0.5em;
+}
+.about-left{
+     width:50%;
+     font-family: Catamaran, sans-serif;
+    text-align: center;
+}
+
+.about-left h1{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 50px;
+    
+    line-height: 1.2;
+    
+}
+.about-left h4{
+    color: var(--second-color);
+    font-weight: 700;
+     font-size: 23px;
+    line-height: 1.2;
+}
+.about-left p{
+    font-size: 18px;
+    color:var(--main-color);
+    margin-bottom: 1em;
+}
+.about-left  a{
+     text-decoration: none;
+     background-color:var(--second-color);
+     padding: 0.3em 1em;
+     font-size: 20px;
+     color:#fff;
+     margin-top: 2em;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+}
+.about-right{
+     width:50%;
+     text-align: center;
+}
+.about-right img{
+    height: 300px;
+
+}
