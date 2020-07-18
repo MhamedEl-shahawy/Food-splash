@@ -1,30 +1,42 @@
 :root{
     --main-color:#444A54;
     --second-color:#fd8f48;
+    --color-hover:#FFECC7;
 }
 *{
     box-sizing:border-box;
     padding:0;
     margin:0;
 }
+a{
+ text-decoration:none;
+ color:#333;
+}
+section,header{
+        margin-bottom: 50px;
+}
 body{
     height:100%;
     width:100%;
     overflow-x:hidden;
 }
+.container{
+    display: flex;
+    align-items: center;
+    width:80%;
+    margin: auto;   
+     flex-direction: column;
+}
 .header{
     width:100%;
-    margin-bottom: 50px;
-  
 }
-.container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:80%;
-    margin: auto;
-   
+    flex-direction:row;
 }
+
 .logo{
     font-family: 'Pacifico', cursive;
     font-size: 24px;
@@ -120,5 +132,180 @@ nav li a{
 }
 .about-right img{
     height: 300px;
+}
+/* start learn about food */
+.benfits,.food{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+     font-family: Catamaran, sans-serif;
+     position:relative;
 
+}
+.benfits{
+ background-color:#FFF7F0;
+}
+
+.benfits__label{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+ 
+    padding-top: 1em;
+}
+.benfits__label h2{
+    color: var(--second-color);
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+.benfits__label h3 { 
+     color: #444B54;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+.benfits__info,.food__info{
+    margin:auto;
+    margin-top:10px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;    
+    max-width: 800px;
+}
+
+.benfits-card{
+   width: 200px;   
+     margin:20px;
+    display:flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align:center;
+}
+.benfits-card h4{
+  color:var(--second-color);
+}
+.benfits-card img,.card img{
+    height: 35px;
+}
+.benfits-card p,.card p{
+    line-height: 1.2;
+}
+/* start food */
+.card{
+    border-radius: 7px;
+    margin: 10px;
+}
+.card-button{
+    width: 80px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+    padding: 10px;
+    cursor:pointer;
+}
+.card-button:hover{
+    background:var(--color-hover);
+}
+.card-viewer{ 
+   position: fixed;
+    width: 300px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50.1%, -50%);
+    z-index: +1;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px 0px rgba(116, 116, 116, 0.3);
+}
+.card-viewer .title{
+   position:relative;
+   width:100%;
+   display:flex;
+   justify-content:center;
+   padding:0.7em;
+}
+.card-viewer .title h3{
+   color:var(--second-color);
+   font-size:23px;
+   font-weight:bold;
+   margin-top:5px;
+}
+.close{
+    position:absolute;
+    right:2%;
+    background:transparent;
+    border:none;
+    font-size:23px;
+    cursor:pointer;
+}
+.loader{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.loader__container{
+   width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #68D391;
+    border: 1px solid #68D391;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin:5px;
+}
+.load p{
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: #444B54;
+}
+.loader__container p{
+    font-size:1.2em;
+     text-align:center;
+}
+.rating{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:5px;
+}
+.rating__info{
+    width:120px;
+    font-size:20px;
+    font-weight:bold;
+    color: #444B54;
+    margin:5px;
+    text-align:center;
+    line-height:1.5;
+}
+/* start contact */
+.contact{
+    width:100%;
+    background-color:#FFF7F0;
+    padding:1em;
+    font-family: Catamaran, sans-serif;
+}
+.contact nav li a{
+    font-size:18px; 
+}
+.social a{ 
+     margin: 5px 0;
+}
+footer .social a i {
+    font-size: 22px;
+    color: #444B54;
+    margin: 5px;
+}
+footer .social a:hover i , .contact nav li a:hover {
+    color: #FD8F48;
 }
