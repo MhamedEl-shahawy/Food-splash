@@ -222,6 +222,7 @@ nav li a{
     background-color: white;
     border-radius: 7px;
     box-shadow: 0px 0px 30px 0px rgba(116, 116, 116, 0.3);
+    display:none
 }
 .card-viewer .title{
    position:relative;
@@ -266,7 +267,7 @@ nav li a{
     margin-top: 5px;
     font-size: 14px;
     text-align: center;
-    color: #444B54;
+    
 }
 .loader__container p{
     font-size:1.2em;
@@ -287,6 +288,24 @@ nav li a{
     margin:5px;
     text-align:center;
     line-height:1.5;
+}
+.orange{
+    border: 1px solid #F6AD55;
+}
+.p-orange{
+color:#F6AD55;
+}
+.blue{
+    border: 1px solid #63B3ED;
+}
+.p-blue{
+  color:#63B3ED;
+}
+.purble{ 
+    border: 1px solid #B794F4;
+}
+.p-purble{
+color:#B794F4;
 }
 /* start contact */
 .contact{
